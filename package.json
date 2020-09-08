@@ -1,0 +1,19 @@
+{
+  "name": "danger-js-example",
+  "version": "1.0.0",
+  "description": "Danger.js example rep",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonathan-fielding/danger-js-example.git"
+  },
+  "author": "Jonathan Fielding",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jonathan-fielding/danger-js-example/issues"
+  },
+  "homepage": "https://github.com/jonathan-fielding/danger-js-example#readme"
+}
