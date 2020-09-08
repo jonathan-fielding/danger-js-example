@@ -1,4 +1,4 @@
 import {message, danger} from "danger"
 
-const modifiedMD = danger.git.modified_files.join("- ")
-message("Changed Files in this PR: \n - " + modifiedMD)
+const newFiles = danger.git.created_files.join("- ")
+message("New Files in this PR: \n - " + newFiles);
