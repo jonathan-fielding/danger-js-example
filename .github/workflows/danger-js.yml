@@ -9,12 +9,6 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 12.x
-    - name: Move package.json out of the way so we install just stuff we need
-      run: mv package.json package.json-temp
-    - name: Npm install
-      run: npm install node-fetch
-    - name: Move package.json back into place
-      run: mv package.json-temp package.json
     - name: Danger
       run: npx danger ci
       env: 
