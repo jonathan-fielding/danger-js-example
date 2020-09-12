@@ -16,7 +16,11 @@
     "url": "https://github.com/jonathan-fielding/danger-js-example/issues"
   },
   "homepage": "https://github.com/jonathan-fielding/danger-js-example#readme",
-  "dependencies": {},
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "webpack": "^4.44.1"
+  },
   "devDependencies": {
     "danger": "^10.4.0"
   }

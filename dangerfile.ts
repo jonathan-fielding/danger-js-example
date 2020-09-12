@@ -1,4 +1,6 @@
-import {message, danger} from "danger"
+import {warn, danger} from "danger"
 
-const newFiles = danger.git.created_files.join("- ")
-message("New Files in this PR: \n - " + newFiles);
+const bigPRThreshold = 600;
+if (danger.github.pr.additions + danger.github.pr.deletions > bigPRThreshold) {
+  warn('Big pull request, please keep small to make it easier to review');
+}
