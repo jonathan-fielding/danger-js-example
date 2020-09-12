@@ -1,4 +1,8 @@
-import {message, danger} from "danger"
+import {fail, danger} from "danger"
 
-const newFiles = danger.git.created_files.join("- ")
-message("New Files in this PR: \n - " + newFiles);
+// Commits should start with feat, fix, major or chore
+danger.git.commits.forEach(commit => {
+  if (!commit.message.match(/^(feat:)|(fix:)|(major:)|(chore:)/g)) {
+    fail(`Commit message '${commit.message}' does match the correct format`)
+  }
+})
