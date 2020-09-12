@@ -16,7 +16,9 @@
     "url": "https://github.com/jonathan-fielding/danger-js-example/issues"
   },
   "homepage": "https://github.com/jonathan-fielding/danger-js-example#readme",
-  "dependencies": {},
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  },
   "devDependencies": {
     "danger": "^10.4.0"
   }
